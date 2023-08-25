@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Render from static methods</h1>
+    <nav>
+      <a href="/fromServer">App SERVER SIDE</a>
+    </nav>
+    <div>
+      <h2>Send image (form-datas) and show result in user pages</h2>
+
+      <form
+        action="http://localhost:8000/api/uploads"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="name" name="name" />
+        <input type="email" name="email" />
+        <input type="password" name="password" />
+        <input type="file" name="avatar" />
+        <input type="submit" value="Upload" />
+      </form>
+    </div>
+  </body>
+</html>
