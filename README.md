@@ -11,4 +11,3 @@ Si route API pour envoie de donnée set header "Content-Type", "application/json
 Res avec render() ou sendfile()
 j'envoie le html depuis l'url server
 
-
